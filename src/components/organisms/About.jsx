@@ -8,7 +8,7 @@ const About = () => {
         <div className="md:flex items-center space-y-8 md:space-y-0 md:space-x-12">
           <div className="md:w-1/2">
             <img 
-              src="/profile.jpg" 
+              src="https://avatars.githubusercontent.com/u/150656111?v=4" 
               alt="Profile" 
               className="rounded-lg shadow-lg w-full max-w-md mx-auto"
             />

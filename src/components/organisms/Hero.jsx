@@ -59,8 +59,8 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10">
             <img 
-              src="/profile.jpg" 
-              alt="Carlos Mendoza" 
+              src="https://avatars.githubusercontent.com/u/150656111?v=4" 
+              alt="Muhammad Anka Reza" 
               className="w-full max-w-lg mx-auto rounded-lg shadow-2xl"
             />
           </div>

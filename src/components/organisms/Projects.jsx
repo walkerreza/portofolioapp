@@ -7,19 +7,19 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'Developed a full-stack e-commerce platform using React and Node.js',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: '/project1.jpg'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQ_UyicSgoiOcXlWNgxVIaQ7jIlItPK5noQ&s'
     },
     {
       title: 'Task Management App',
       description: 'Built a collaborative task management application with real-time updates',
       tech: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-      image: '/project2.jpg'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIN5CeArTP93p-I3nBytv4Gxw5Z7z7XbQkw&s'
     },
     {
       title: 'AI Chat Application',
       description: 'Created an AI-powered chat application with natural language processing',
       tech: ['Python', 'TensorFlow', 'FastAPI', 'React'],
-      image: '/project3.jpg'
+      image: 'https://aici-umg.com/wp-content/uploads/2024/09/Perkembangan-AI-Inovasi-Terbaru-dan-Ke-Depan-1024x585.webp'
     }
   ];
 
