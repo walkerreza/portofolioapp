@@ -24,7 +24,15 @@ RUN echo "=== FILES AFTER BUILD ===" && ls -la
 RUN echo "=== CURRENT DIRECTORY ===" && pwd
 
 # Debug: Check if dist directory exists
-RUN if [ -d "dist" ]; then echo "=== DIST DIRECTORY EXISTS ===" && ls -la dist; else echo "=== DIST DIRECTORY DOES NOT EXIST ==="; fi
+RUN if [ -d "dist" ]; then \
+    echo "=== DIST DIRECTORY EXISTS ===" && \
+    ls -la dist && \
+    echo "=== DIST DIRECTORY CONTENT ===" && \
+    find dist -type f | sort && \
+    echo "=== DIST INDEX.HTML CONTENT ===" && \
+    cat dist/index.html; \
+    else echo "=== DIST DIRECTORY DOES NOT EXIST ==="; \
+    fi
 
 # Production stage
 FROM nginx:alpine AS production
