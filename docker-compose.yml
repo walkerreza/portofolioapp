@@ -25,25 +25,7 @@ services:
       - "192.168.44.194:8080:80"
     environment:
       - NODE_ENV=production
-      - TZ=Asia/Jakarta
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 1G
-        reservations:
-          memory: 256M
-
-networks:
-  portfolio-network:
-    driver: bridge
 
 volumes:
   node_modules:
