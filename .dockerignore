@@ -1,11 +1,66 @@
-node_modules
+# Dependencies
+node_modules/
 npm-debug.log
-build
+yarn-debug.log
+yarn-error.log
+
+# Build files
+/dist
+/build
+/.next
+/out
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
 .git
 .gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Local development
+.cache/
+.temp/
+.tmp/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
 README.md
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+LICENSE
+*.md
+*.txt
