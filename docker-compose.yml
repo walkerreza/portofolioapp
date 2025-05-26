@@ -7,7 +7,7 @@ services:
       context: .
       target: build
     ports:
-      - "3000:3000"
+      - "192.168.44.194:3000:3000"
     volumes:
       - ./:/app
       - /app/node_modules
@@ -22,7 +22,7 @@ services:
     build:
       context: .
     ports:
-      - "80:80"
+      - "192.168.44.194:8080:80"
     environment:
       - NODE_ENV=production
       - TZ=Asia/Jakarta
